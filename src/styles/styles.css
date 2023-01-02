@@ -1,0 +1,255 @@
+@import "./_base.css";
+
+.container {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+}
+
+.top-border {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--yellow);
+  height: 10px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  max-width: 240px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: black;
+  position: fixed;
+  z-index: 10;
+  left:0;
+  top: 10px;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  transition: all .5s linear 0ms;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+li > a {
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+li > a::after {
+  content:"";
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  border-right: 2px solid black;
+}
+
+li:nth-child(5) > a::after {
+  display: none;
+}
+
+.grid {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  justify-content: space-around;
+}
+
+.grid li {
+  margin: 80px 40px;
+  padding: 40px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid li:nth-child(3n+1) {
+  border-top: 8px solid var(--purple);
+  background: ghostwhite;
+}
+
+.grid li:nth-child(3n+2) {
+  border-left: 8px solid var(--red);
+  background: #fff8f8;
+}
+
+.grid li:nth-child(3n+3) {
+  border-bottom: 8px solid #7dd900;
+  background: #f2fbf2;
+}
+
+.grid h2 {
+  font-size: 34px;
+  line-height: 1;
+  padding: 18px 10px 5px 0;
+  border-radius: 50%;
+  background: #ffdc21;
+  font-family: fantasy;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 1px rgb(136 136 136);
+}
+
+.grid h3 {
+  font-size: 30px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+}
+
+.grid h3 a {
+  text-decoration: none;
+  color: var(--gray);
+  line-height:1.1;
+}
+
+.grid p {
+  margin-top: 0;
+}
+
+.loading {
+  text-align: center;
+  animation: spin 2s infinite linear;
+  font-size: 40px;
+  margin: 20px auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading-center {
+  height: calc(100vh - 150px);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 2rem 7rem;
+  border: 1px solid #e5c305;
+  border-radius: 4px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  background: #ffd500;
+  cursor: pointer;
+}
+
+
+h1 span {
+  display: inline-flex;
+  justify-content: center;
+}
+
+span img {
+  display: inline-flex;
+  margin: 0 0.6rem 0 0;
+  width: 100%;
+  max-width: 48px;
+  height: auto;
+}
+
+.heading-center p {
+  font-size: 1em;
+}
+
+.container svg {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.loader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.loader p {
+  color: #e5c305;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#skeleloader {
+  display: flex;
+  max-width: 340px;
+  justify-content: center;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  li {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+  }
+  li > a {
+    font-size: 20px;
+    padding: 0 7px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid li {
+    margin: 80px 20px;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  li {
+    max-width: 100%;
+  }
+}
