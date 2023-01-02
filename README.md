@@ -18,7 +18,7 @@ Simple React application with links to top-rated front-end resources around GitH
 Bundled 
 with Vite.      
 
-Deployed and host with Netlify <kbd>></kbd> <a href="#" title="React challenge">Link to 
+Deployed and host with Netlify <kbd>></kbd> <a href="https://hilarious-kashata-1ca79f.netlify.app" title="React challenge">Link to 
 App</a>
 
 <br />
@@ -55,5 +55,3 @@ Most dependencies installed are part of my eslint-config plugin. To uninstall pl
 
 <br />
 :100:
-
-

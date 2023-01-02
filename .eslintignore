@@ -1,8 +1,0 @@
-dist/
-node_modules/
-.babelrc
-.eslintignore
-.gitignore
-.env
-.DS_Store
-.idea/
