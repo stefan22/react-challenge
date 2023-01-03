@@ -39,7 +39,15 @@ Most dependencies installed are part of my eslint-config plugin. To uninstall pl
  npm uninstall eslint-config-slco
 ```
 
+
+
+:ledger: NPM: <a href="https://www.npmjs.com/package/eslint-config-slco">ESlint-config-slco</a>
+
+
+
+
 <br />
+
 
 <h3>Project</h3>
 
